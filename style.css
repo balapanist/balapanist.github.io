@@ -151,6 +151,12 @@ ul li::before {
   text-decoration: underline;
 }
 
+.feedback-btn:hover {
+  background: #5a4fcf;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(106, 90, 205, 0.4);
+}
+
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 1.9rem;
@@ -165,7 +171,22 @@ ul li::before {
     font-size: 1rem;
   }
 
+  .buttons-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
   section {
     padding: 22px;
+  }
+
+  .feedback-btn {
+    bottom: 16px;
+    left: 16px;
+    padding: 9px 16px;
+    font-size: 0.95rem;
   }
 }
